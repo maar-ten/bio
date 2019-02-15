@@ -1,0 +1,192 @@
+/* reset from https://meyerweb.com/eric/tools/css/reset/*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* begin document styling */
+body {
+    margin: .5rem;
+    background-color: rgb(233, 233, 237);
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans",
+    Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+    line-height: 1.25rem;
+}
+
+section {
+    margin-bottom: .7rem;
+    /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15),*/
+    /*-1px 0 0 rgba(0, 0, 0, 0.03),*/
+    /*1px 0 0 rgba(0, 0, 0, 0.03),*/
+    /*0 1px 0 rgba(0, 0, 0, 0.12);*/
+}
+
+dt {
+    display: none;
+}
+
+.profile-card {
+    background-color: rgb(255, 255, 255);
+}
+
+.profile-picture {
+    width: 12.5rem;
+    margin: auto;
+}
+
+.profile-overview {
+    padding: .5rem .5rem 1rem .5rem;
+    text-align: center;
+}
+
+.profile-overview h1 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    line-height: 2rem;
+}
+
+.profile-overview h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: .8rem;
+    color: rgb(74, 74, 74);
+    line-height: 1rem;
+}
+
+.profile-overview .demographics {
+    margin-top: 0;
+    font-size: .9rem;
+}
+
+dd {
+    color: rgb(136, 136, 136);
+    margin: 0;
+}
+
+.extra-info {
+    display: none;
+}
+
+section > h3 {
+    padding: 1rem .5rem;
+    color: rgb(51, 51, 51);
+    font-size: 1.1rem;
+}
+
+section > ul {
+    background-color: rgb(255, 255, 255);
+}
+
+.logo {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    margin-right: .75rem;
+}
+
+.position,
+.school,
+.award,
+.publication {
+    padding: .75rem;
+}
+
+.position,
+.school {
+    display: flex;
+}
+
+.position h4 {
+    font-weight: bold;
+}
+
+.position h5 {
+    font-size: .9rem;
+    font-weight: 600;
+    color: rgb(0, 115, 177);
+}
+
+.position h6,
+.school h5,
+.school h6,
+.award h5,
+.award h6,
+.publication h5,
+.publication h6 {
+    font-size: .8rem;
+    font-weight: 300;
+    color: rgb(136, 136, 136);
+}
+
+.school h5,
+.school h6 {
+    line-height: .95rem;
+}
+
+.school h4 {
+    font-size: .9em;
+    font-weight: 600;
+    margin-bottom: .1em;
+}
+
+.award h4,
+.publication h4 {
+    font-weight: 500;
+}
+
+.award > p,
+.publication > p {
+    border-top: 1px solid rgb(225, 225, 225);
+    margin-top: .75rem;
+    padding-top: .75rem;
+    color: rgb(100, 100, 100);
+}
