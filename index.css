@@ -52,7 +52,6 @@ table {
 /* begin document styling */
 body {
     min-width: 320px;
-    margin: .5rem;
     background-color: rgb(233, 233, 237);
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans",
     Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
@@ -61,7 +60,11 @@ body {
 }
 
 section {
-    margin-bottom: .7rem;
+    margin: .75rem .4rem 0;
+}
+
+section:last-of-type {
+    margin-bottom: 2rem
 }
 
 dt {
