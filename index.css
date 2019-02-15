@@ -51,6 +51,7 @@ table {
 
 /* begin document styling */
 body {
+    min-width: 320px;
     margin: .5rem;
     background-color: rgb(233, 233, 237);
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans",
@@ -61,14 +62,19 @@ body {
 
 section {
     margin-bottom: .7rem;
-    /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15),*/
-    /*-1px 0 0 rgba(0, 0, 0, 0.03),*/
-    /*1px 0 0 rgba(0, 0, 0, 0.03),*/
-    /*0 1px 0 rgba(0, 0, 0, 0.12);*/
 }
 
 dt {
     display: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 115, 177);
+}
+
+a:visited {
+    color: rgb(85, 26, 139);
 }
 
 .profile-card {
@@ -152,7 +158,6 @@ section > ul {
 .position h5 {
     font-size: .9rem;
     font-weight: 600;
-    color: rgb(0, 115, 177);
 }
 
 .position h6,
@@ -175,7 +180,7 @@ section > ul {
 .school h4 {
     font-size: .9em;
     font-weight: 600;
-    margin-bottom: .1em;
+    margin-bottom: .1rem;
 }
 
 .award h4,
@@ -189,4 +194,156 @@ section > ul {
     margin-top: .75rem;
     padding-top: .75rem;
     color: rgb(100, 100, 100);
+}
+
+/* Screen width from 640px */
+@media screen and (min-width: 640px) {
+    body {
+        font-family: "Arial", sans-serif;
+    }
+
+    section {
+        margin: auto;
+        width: 40rem;
+    }
+
+    .profile-card {
+        display: flex;
+    }
+
+    .profile-picture {
+        margin: 1.25rem 0;
+    }
+
+    .profile-overview {
+        padding: 1.25rem;
+        text-align: left;
+    }
+
+    .profile-overview h1 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: normal;
+    }
+
+    .profile-overview h3 {
+        font-size: 1rem;
+        color: rgb(50, 50, 50);
+    }
+
+    .profile-overview .demographics {
+        font-size: .8rem;
+    }
+
+    .demographics dd:nth-of-type(2) {
+        margin-left: .3rem;
+        padding-left: .3rem;
+        border-left: 1px solid rgb(185, 185, 185);
+    }
+
+    .profile-overview .extra-info {
+        display: block;
+        margin-top: .6rem;
+        font-size: .7rem;
+        color: rgb(100, 100, 100);
+    }
+
+    .extra-info th {
+        padding-right: 1.25rem;
+    }
+
+    .extra-info td {
+        color: rgb(50, 50, 50);
+    }
+
+    section {
+        margin-bottom: .6rem;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15),
+        -1px 0 0 rgba(0, 0, 0, 0.03),
+        1px 0 0 rgba(0, 0, 0, 0.03),
+        0 1px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    section > h3 {
+        padding: 2rem 2.2rem 0 2.2rem;
+        background-color: rgb(255, 255, 255);
+    }
+
+    section > ul > li:last-child {
+        border-bottom: none;
+    }
+
+    .logo {
+        display: block;
+        width: 3.75rem;
+        height: 3.75rem;
+        margin-right: .75rem;
+        padding: .25rem;
+    }
+
+    .position,
+    .school,
+    .award,
+    .publication {
+        padding: 2rem 2.2rem 2rem 2.2rem;
+        border-bottom: 1px solid rgb(220, 220, 220);
+    }
+
+    .position h6,
+    .school h5,
+    .school h6,
+    .award h5,
+    .award h6,
+    .publication h5,
+    .publication h6 {
+        font-size: .9rem;
+        font-weight: 400;
+        color: rgb(50, 50, 50);
+    }
+
+    .position h6:last-of-type,
+    .school h6:last-of-type,
+    .award h6:last-of-type,
+    .publication h6:last-of-type {
+        color: rgb(125, 125, 125);
+    }
+
+    .school {
+        flex-direction: row-reverse;
+    }
+
+    .school > div {
+        width: 100%;
+    }
+
+    .school .logo {
+        margin-right: 0;
+    }
+
+    .school h4 {
+        /*color: rgb(0, 115, 177);*/
+    }
+
+    .school h5,
+    .school h6 {
+        line-height: normal;
+    }
+
+    .school h6 {
+        margin-top: .25rem;
+    }
+
+    .award h4,
+    .publication h4 {
+        font-weight: 700;
+    }
+
+    .award > p,
+    .publication > p {
+        margin-top: 0;
+        padding-top: 1rem;
+        border-top: none;
+        font-size: .8rem;
+        color: rgb(50, 50, 50);
+    }
 }
