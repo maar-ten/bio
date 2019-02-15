@@ -63,6 +63,10 @@ section {
     margin: .75rem .4rem 0;
 }
 
+section:first-of-type {
+    margin-top: 0;
+}
+
 section:last-of-type {
     margin-bottom: 2rem
 }
@@ -265,6 +269,10 @@ section > ul {
         -1px 0 0 rgba(0, 0, 0, 0.03),
         1px 0 0 rgba(0, 0, 0, 0.03),
         0 1px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    section:first-of-type {
+        margin-top: .6rem;
     }
 
     section > h3 {
