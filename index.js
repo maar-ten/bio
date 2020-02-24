@@ -1,8 +1,9 @@
 function createYearsMonthsText(duration) {
-    const years = duration.years();
+    const total_months = duration.as('months');
+    const years = Math.floor(total_months / 12);
     const yearsText = `${years} jaar`;
 
-    const months = duration.months();
+    const months = Math.round(total_months % 12);
     const monthPlural = months > 1 ? 'en' : '';
     const monthsText = months > 0 ? `en ${months} maand${monthPlural}` : '';
 
