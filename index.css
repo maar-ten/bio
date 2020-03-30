@@ -158,10 +158,6 @@ section > ul {
     display: flex;
 }
 
-.position h4 {
-    font-weight: bold;
-}
-
 .position h5 {
     font-size: .9rem;
     font-weight: 600;
@@ -190,6 +186,7 @@ section > ul {
     margin-bottom: .1rem;
 }
 
+.position h4,
 .award h4,
 .publication h4 {
     font-weight: 500;
@@ -327,10 +324,6 @@ section > ul {
         margin-right: 0;
     }
 
-    .school h4 {
-        /*color: rgb(0, 115, 177);*/
-    }
-
     .school h5,
     .school h6 {
         line-height: normal;
@@ -340,6 +333,7 @@ section > ul {
         margin-top: .25rem;
     }
 
+    .position h4,
     .award h4,
     .publication h4 {
         font-weight: 700;
