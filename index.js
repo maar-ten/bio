@@ -11,7 +11,7 @@ function createYearsMonthsText(duration) {
 }
 
 function setCurrentJobDuration() {
-    const currentJobStart = moment([2020, 8]);
+    const currentJobStart = moment([2020, 7]); // equals august 1st 2020 (Moment's months start at zero)
     const currentJobDuration = moment.duration(moment().diff(currentJobStart));
     document.getElementById('currentJobDuration').innerText = createYearsMonthsText(currentJobDuration);
 }
