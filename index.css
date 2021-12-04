@@ -182,6 +182,13 @@ section > ul {
     color: rgb(136, 136, 136);
 }
 
+.project h6:last-of-type {
+    margin-top: .5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(100, 100, 100);
+}
+
 .school h5,
 .school h6 {
     line-height: .95rem;
@@ -208,13 +215,13 @@ section > ul {
 }
 
 .projects {
-    margin-left: 2em;
+    margin-left: calc((3rem / 2) - 4px);
 }
 
 .project div {
-    padding: 0 0 1em calc(3em - 4px);
+    padding: 0 0 1em calc((3.75rem / 2) + 4px);
     margin-left: 3px;
-    border-left: 2px solid rgb(200, 200, 200);
+    border-left: 2px solid rgb(240, 240, 240);
 }
 
 .project:last-of-type div {
@@ -327,7 +334,8 @@ section > ul {
         border-bottom: 1px solid rgb(220, 220, 220);
     }
 
-    .position h6,
+    .position .description h6,
+    .project h6,
     .school h5,
     .school h6,
     .award h5,
@@ -339,7 +347,8 @@ section > ul {
         color: rgb(50, 50, 50);
     }
 
-    .position h6:last-of-type,
+    .position .description h6:last-of-type,
+    .project h6:first-of-type,
     .school h6:last-of-type,
     .award h6:last-of-type,
     .publication h6:last-of-type {
@@ -377,4 +386,12 @@ section > ul {
         font-size: .8rem;
         color: rgb(50, 50, 50);
     }
+
+    .projects {
+        margin-left: 2rem;
+    }
+
+    .project div {
+        padding-left: calc(3rem - 4px);
+    }    
 }
