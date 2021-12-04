@@ -140,10 +140,16 @@ section > ul {
 }
 
 .logo {
+    flex: 0 0;
     display: block;
     width: 3rem;
     height: 3rem;
     margin-right: .75rem;
+}
+
+.position .description,
+.school .description {
+    flex: auto;
 }
 
 .position,
@@ -156,6 +162,7 @@ section > ul {
 .position,
 .school {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .position h5 {
@@ -200,17 +207,21 @@ section > ul {
     color: rgb(100, 100, 100);
 }
 
-li.project div {
-    padding: 0 0 1em 3em;
+.projects {
+    margin-left: 2em;
+}
+
+.project div {
+    padding: 0 0 1em calc(3em - 4px);
     margin-left: 3px;
     border-left: 2px solid rgb(200, 200, 200);
 }
 
-li.project:last-of-type div {
+.project:last-of-type div {
     border-color: white;
 }
 
-li.project::before {
+.project::before {
     content: "";
     display: block;
     position: relative;
@@ -337,10 +348,6 @@ li.project::before {
 
     .school {
         flex-direction: row-reverse;
-    }
-
-    .school > div {
-        width: 100%;
     }
 
     .school .logo {
