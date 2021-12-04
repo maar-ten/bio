@@ -140,10 +140,16 @@ section > ul {
 }
 
 .logo {
+    flex: 0 0;
     display: block;
     width: 3rem;
     height: 3rem;
     margin-right: .75rem;
+}
+
+.position .description,
+.school .description {
+    flex: auto;
 }
 
 .position,
@@ -156,6 +162,7 @@ section > ul {
 .position,
 .school {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .position h5 {
@@ -173,6 +180,13 @@ section > ul {
     font-size: .8rem;
     font-weight: 300;
     color: rgb(136, 136, 136);
+}
+
+.project h6:last-of-type {
+    margin-top: .5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(100, 100, 100);
 }
 
 .school h5,
@@ -198,6 +212,33 @@ section > ul {
     margin-top: .75rem;
     padding-top: .75rem;
     color: rgb(100, 100, 100);
+}
+
+.projects {
+    margin-left: calc((3rem / 2) - 4px);
+}
+
+.project div {
+    padding: 0 0 1em calc((3.75rem / 2) + 4px);
+    margin-left: 3px;
+    border-left: 2px solid rgb(240, 240, 240);
+}
+
+.project:last-of-type div {
+    border-color: white;
+}
+
+.project::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 1em;
+    background:  rgb(200, 200, 200);
+    width: 8px;
+    height: 8px;
+    line-height: 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px white;
 }
 
 /* Screen width from 640px */
@@ -293,7 +334,8 @@ section > ul {
         border-bottom: 1px solid rgb(220, 220, 220);
     }
 
-    .position h6,
+    .position .description h6,
+    .project h6,
     .school h5,
     .school h6,
     .award h5,
@@ -305,7 +347,8 @@ section > ul {
         color: rgb(50, 50, 50);
     }
 
-    .position h6:last-of-type,
+    .position .description h6:last-of-type,
+    .project h6:first-of-type,
     .school h6:last-of-type,
     .award h6:last-of-type,
     .publication h6:last-of-type {
@@ -314,10 +357,6 @@ section > ul {
 
     .school {
         flex-direction: row-reverse;
-    }
-
-    .school > div {
-        width: 100%;
     }
 
     .school .logo {
@@ -347,4 +386,12 @@ section > ul {
         font-size: .8rem;
         color: rgb(50, 50, 50);
     }
+
+    .projects {
+        margin-left: 2rem;
+    }
+
+    .project div {
+        padding-left: calc(3rem - 4px);
+    }    
 }
