@@ -218,10 +218,14 @@ section > ul {
 
 .award > p,
 .publication > p {
-    border-top: 1px solid rgb(225, 225, 225);
     margin-top: .75rem;
     padding-top: .75rem;
     color: rgb(100, 100, 100);
+}
+
+.award > p:first-of-type,
+.publication > p:first-of-type {
+    border-top: 1px solid rgb(225, 225, 225);
 }
 
 .projects {
@@ -403,11 +407,15 @@ section > ul {
     .publication > p {
         margin-top: 0;
         padding-top: 1rem;
-        border-top: none;
         font-size: .8rem;
         color: rgb(50, 50, 50);
     }
 
+    .award > p:first-of-type,
+    .publication > p:first-of-type {
+        border-top: none;
+    }
+    
     .projects {
         margin-left: 2rem;
     }
