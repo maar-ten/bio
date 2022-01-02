@@ -341,9 +341,18 @@ section > ul {
     .award,
     .publication {
         padding: 2rem 2.2rem 2rem 2.2rem;
+        border-bottom: 1px solid rgb(220, 220, 220);
+    }
+
+    .position {
         grid-template-columns: calc(var(--logo-width-l) + var(--logo-padding-l)) auto;
         gap: 0 1rem;
-        border-bottom: 1px solid rgb(220, 220, 220);
+    }
+
+    .school {
+        grid-template-columns: auto calc(var(--logo-width-l) + var(--logo-padding-l));
+        grid-template-areas: "desc logo";
+        gap: 0 1rem;
     }
 
     .position .description h6,
