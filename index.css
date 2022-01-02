@@ -127,7 +127,7 @@ a:visited {
 }
 
 dd {
-    color: rgb(136, 136, 136);
+    color: rgb(108, 108, 108);
     margin: 0;
 }
 
@@ -189,7 +189,7 @@ section > ul {
 .publication h6 {
     font-size: .8rem;
     font-weight: 300;
-    color: rgb(136, 136, 136);
+    color: rgb(108, 108, 108);
 }
 
 .project h6:last-of-type {
@@ -373,7 +373,7 @@ section > ul {
     .school h6:last-of-type,
     .award h6:last-of-type,
     .publication h6:last-of-type {
-        color: rgb(125, 125, 125);
+        color: rgb(108, 108, 108);
     }
 
     .school {
